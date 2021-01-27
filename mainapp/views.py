@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from datetime import date
 
 # Create your views here.
 # контроллер = функция - view
@@ -9,8 +10,9 @@ from django.shortcuts import render
 def index(request):
     context = {
         'title': 'GeekShop',
-        'authorized': True,
+        'authorized': False,
         'user': 'Инна К.',
+        'today': date.today()
               }
     return render(request, 'mainapp/index.html', context)
 
@@ -18,7 +20,7 @@ def index(request):
 def products(request):
     context = {
         'title': 'GeekShop - Каталог',
-        'authorized': True,
+        'authorized': False,
         'user': 'Инна К.',
 
               }
