@@ -60,7 +60,7 @@
                             <div class="card h-100">
                                 <a href="#">
                                     <img class="card-img-top"
-                                         src="{% static product.img %}"
+                                         src="/media/" {{ product.image }}
                                          alt="">
                                 </a>
                                 <div class="card-body">
@@ -68,7 +68,7 @@
                                         <a href="#">{{ product.name }}</a>
                                     </h4>
                                     <h5>{{ product.price }}</h5>
-                                    <p class="card-text">{{ product.details }}</p>
+                                    <p class="card-text">{{ product.short_description }}</p>
                                 </div>
                                 <div class="card-footer text-center">
                                     {% if product.in_basket %}
