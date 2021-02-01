@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from datetime import date
-from mainapp.models import duct, ProductCategory, Menu
+from mainapp.models import Product, ProductCategory, Menu
 # Create your views here.
 # контроллер = функция - view
 # MVC - Model View Controller
