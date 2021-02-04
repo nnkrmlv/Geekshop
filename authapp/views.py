@@ -19,7 +19,7 @@ def login(request):
         form = UserLoginForm()
     contex = {'form': form}
 
-    return render(request, 'authapp/login.html')
+    return render(request, 'authapp/login.html', contex)
 
 
 def register(request):
